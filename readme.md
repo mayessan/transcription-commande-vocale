@@ -18,10 +18,12 @@ CUDA (optionnel pour accélération GPU)
 Librairies Python (installées dans un environnement virtuel) :
 
 pip install torch torchaudio librosa matplotlib numpy pandas scikit-learn streamlit gradio seaborn datasets transformers jiwer sentencepiece protobuf
-**Structure du projet
+
+***Structure du projet
 
 ** pour la transcription
-download_dataset_trans.py         	  # Téléchargement et extraction des datasets
+
+download_dataset_trans.py           	  # Téléchargement et extraction des datasets
 
 dpreprocess_data.py          	        # Nettoie et normalise les transcriptions en supprimant la ponctuation
 
@@ -37,6 +39,7 @@ run_model.py                	        # Évalue le modèle sur un dataset de vali
 
 
 ** pour la commande_vocale
+
 download_dataset.py         	  # Téléchargement et extraction du dataset Google Speech Commands.
 
 audio_feature_extraction.py 	  # Affiche un exemple de spectrogramme Mel généré à partir d’un fichier audio.
@@ -53,6 +56,7 @@ app.py					                    #Affiche une interface gradio pour tester à la f
 
 
 **Installation et configuration
+
 *Installer Python 3.8+ depuis python.org
 
 *Créer un environnement virtuel et l’activer
@@ -68,6 +72,7 @@ pip install torch torchaudio librosa matplotlib numpy pandas scikit-learn stream
 **Usage
 
 1. Télécharger les datasets
+   
 *Pour Google Speech Commands :
 
 python download_dataset_trans.py --> transcription
@@ -77,12 +82,13 @@ python download_dataset_trans.py --> transcription
 python download_dataset.py --> commande_vocale
 
 
-3. Entraînement
+2. Entraînement
 
 python train.py --> pour la commande vocale
 python train_trans.py --> pour la commande vocale
 
-4. Évaluation
+3. Évaluation
+
 *Pour la détection commandes vocales :
 
 python evaluate.py
@@ -91,6 +97,6 @@ python evaluate.py
 
 python run_model.py 
 
-5.app.py
+4.app.py
 
 python app.py --> pour lancer l'application
