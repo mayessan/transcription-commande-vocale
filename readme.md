@@ -38,7 +38,7 @@ pip install torch torchaudio librosa matplotlib numpy pandas scikit-learn stream
 ├── train.py                     	  # Entraîne le modèle CNN sur les spectrogrammes extraits des commandes vocales.
 ├── evaluate.py                  	  # Évaluation modèle commande vocale..
 
-app.py					  #Affiche une interface gradio pour tester à la fois la transcription audio et la détection de commandes vocales.
+app.py					                    #Affiche une interface gradio pour tester à la fois la transcription audio et la détection de commandes vocales.
 
 
 **Installation et configuration
@@ -82,4 +82,4 @@ python run_model.py
 
 5.app.py
 
-python.py --> pour lancer l'application
+python app.py --> pour lancer l'application
