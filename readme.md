@@ -13,7 +13,6 @@ Ces deux approches couvrent la préparation des données, extraction des feature
 **Prérequis
 Python 3.8 ou plus
 
-CUDA (optionnel pour accélération GPU)
 
 Librairies Python (installées dans un environnement virtuel) :
 
